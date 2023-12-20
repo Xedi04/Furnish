@@ -1,0 +1,105 @@
+@import "./mixin/mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 0 32px;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    ;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    .navbar {
+        @include mini;
+        justify-content: space-between;
+        padding: 50px 0;
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        ul {
+            @include flex;
+            gap: 50px;
+            list-style: none;
+
+            li {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+header {
+    width: 100%;
+    background-color: rgb(212, 250, 255);
+
+    .head {
+        @include mini;
+        justify-content: space-between;
+
+        .head-1 {
+            width: 50%;
+            padding-left: 100px;
+
+            .div-h {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h2 {
+                    font-size: 45px;
+                    font-weight: 200;
+                }
+
+                h1 {
+                    font-size: 50px;
+                    font-weight: 700;
+                }
+
+                p {
+                    color: gray;
+                }
+
+                button {
+                    margin-top: 20px;
+                    width: 120px;
+                    color: rgb(0, 111, 139);
+                    border-radius: 20px;
+                    padding: 15px 0;
+                    border: none;
+                    background-color: white;
+                    box-shadow: 4px 28px 81px -21px rgba(0, 0, 0, 0.47);
+                    -webkit-box-shadow: 4px 28px 81px -21px rgba(0, 0, 0, 0.47);
+                    -moz-box-shadow: 4px 28px 81px -21px rgba(0, 0, 0, 0.47);
+                }
+            }
+        }
+
+        .head-2 {
+            width: 50%;
+            height: 635px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0 32px;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+nav .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+nav .navbar .logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+nav .navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+nav .navbar ul li {
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(212, 250, 255);
+}
+header .head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header .head .head-1 {
+  width: 50%;
+  padding-left: 100px;
+}
+header .head .head-1 .div-h {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+header .head .head-1 .div-h h2 {
+  font-size: 45px;
+  font-weight: 200;
+}
+header .head .head-1 .div-h h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+header .head .head-1 .div-h p {
+  color: gray;
+}
+header .head .head-1 .div-h button {
+  margin-top: 20px;
+  width: 120px;
+  color: rgb(0, 111, 139);
+  border-radius: 20px;
+  padding: 15px 0;
+  border: none;
+  background-color: white;
+  box-shadow: 4px 28px 81px -21px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 4px 28px 81px -21px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 4px 28px 81px -21px rgba(0, 0, 0, 0.47);
+}
+header .head .head-2 {
+  width: 50%;
+  height: 635px;
+}
+header .head .head-2 img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
